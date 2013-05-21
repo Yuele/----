@@ -1,0 +1,109 @@
+<!DOCTYPE html > 
+
+<html>
+
+<head>
+    <title>X-desktop 官方网站</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link rel="Shortcut Icon" href="favicon.ico">
+    <link rel="Bookmark" href="favicon.ico">
+
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+
+
+    <link rel="stylesheet" href="./iPhone/base.css" type="text/css">
+	<link rel="stylesheet" href="./iPhone/iphone.css" type="text/css">
+	<link rel="stylesheet" href="./iPhone/home.css" type="text/css">
+
+
+	<script>
+
+ACUtils.platterFixes = {
+	isIE8: function () {
+		var match = navigator.userAgent.toLowerCase().match(/msie\D*([\.\d]*)/i);
+		return (match && match[1] && (parseInt(match[1]) <= 8));
+	}
+}
+
+Media.ControlsWidget.prototype._positionSettingsMenuForControl = Media.ControlsWidget.prototype.positionSettingsMenuForControl;
+Media.ControlsWidget.prototype.positionSettingsMenuForControl = function(control) {
+	var correction = ((document.viewport.getDimensions().width - document.body.offsetWidth));
+	this._positionSettingsMenuForControl(control);
+	this.settingsMenu.style.left = (parseInt(this.settingsMenu.style.left) - correction / 2) + 'px';
+}
+
+if (!ACUtils.platterFixes.isIE8()) {
+	ACUtils._cumulativeOffset = ACUtils.cumulativeOffset;
+	ACUtils.cumulativeOffset = function(element) {
+		var offset = ACUtils._cumulativeOffset(element);
+		
+		// if we're in a platter, compensate for the width set on the body
+		offset[0] += ((document.viewport.getDimensions().width - document.body.offsetWidth) / 2);
+		offset.left = offset[0];
+		return offset;
+	}
+}
+
+</script>
+
+
+</head>
+
+<body style="background: #F9F9FA;">
+	<div class="top">
+		<div class="top_box">
+			<div class="logo"><a href="index.html"><img src="img/logo.png"/></a></div>
+			<div class="nav">
+				<a class="navcontent" href="xdesktop.html">迅影桌面</a>
+				<a class="navcontent" href="xreader.html">迅阅资讯</a>
+				<a class="navcontent" href="jobs.html">加入迅影</a>
+				<a class="navcontent" href="about.html">关于我们</a>
+				<a class="navcontent" href="http://club.prayaya.com" target="_blank">人气论坛</a>
+				<a class="navcontent" href="#">在线客服</a>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="main">
+		<div class="main_showbox">
+			<div id="xreader" href="page.html" class="xreader_box" style="background: url(img/x-reader.png) no-repeat;height: 500px;display:none;
+			-moz-border-radius: 5px;
+			-webkit-border-radius: 5px;
+			border-radius: 5px;">
+				<a href="xreader.html"><div  style="padding: 320px 0 0 470px;font-size: 25px;line-height: 35px;text-align: center;//height:100%;">
+					快来体验一把极速阅读</div></a>
+			</div>
+			<div id="V5" href="page.html" class="xreader_box" style="background: url(img/V5.png) no-repeat;height: 500px;-moz-border-radius: 5px;
+			-webkit-border-radius: 5px;
+			border-radius: 5px;">
+				<button class="down">下载使用</button>
+			</div>
+
+
+			
+			<!--<button class="down">畅快的阅读体验快来体验</button> <!--下载按钮 -->
+
+
+
+		</div>
+
+		<div class="main_showboxS_box">
+			<div class="main_showboxS" ><a href="xdesktop.html"><div class="main_showboxS_img"  id="xdesktop"><p style="padding: 20px 0 0 48px;font-size: 30px;color: #000;font-weight: bolder;">迅影桌面</p></div></a></div>
+			<div class="main_showboxS" ><a href="xreader.html"><div class="main_showboxS_img"  id="xreader"><p style="padding: 20px 0 0 48px;font-size: 30px;color: #000;font-weight: bolder;">迅阅资讯</p></div></a></div>
+			<div class="main_showboxS" ><a href="jobs.html"><div class="main_showboxS_img" id="join"><p style="padding: 20px 0 0 48px;font-size: 30px;color: #000;font-weight: bolder;">加入我们</p></div></a></div>
+			<div class="main_showboxS" id="main_showboxS_last"><a href="about.html"><div class="main_showboxS_img"  id="about"><p style="padding: 20px 0 0 48px;font-size: 30px;color: #000;font-weight: bolder;">关于我们</p></div></a></div>
+		</div>
+	</div>
+
+
+	<div class="footer">
+		<div class="footer_content">
+			联系客服 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;开放平台  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;诚征英才  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;联系我们  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;网站地图  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;法律声明  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; © 2013 &nbsp;prayaya.com 版权所有
+		</div>
+	</div>
+
+</body>
+
+</html>

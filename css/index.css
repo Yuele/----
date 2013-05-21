@@ -1,0 +1,82 @@
+/**** 主页设定 ****/
+		.main_showbox {
+			width: 980px;
+			height: 500px;
+			background: #FFF;
+			margin: 0px auto;
+
+			-moz-border-radius: 5px;
+			-khtml-border-radius: 5px;
+			-webkit-border-radius: 5px;
+			border-radius: 5px;
+			
+			-webkit-box-shadow: rgba(0,0,0,0.3) 0 2px 4px;
+			-moz-box-shadow: rgba(0,0,0,0.3) 0 2px 4px;
+			box-shadow: rgba(0,0,0,0.3) 0px 1px 4px;
+
+			}
+
+
+		.main_showboxS_box {
+			width: 980px;
+			height: 220px;
+			margin: 30px auto 0px auto; }
+
+		.main_showboxS {
+			width: 215px;
+			height: 215px;
+			float: left;
+			background: #FFF;
+
+
+			-moz-border-radius: 5px;
+			-webkit-border-radius: 5px;
+			border-radius: 5px;
+
+			-webkit-box-shadow: rgba(0,0,0,0.3) 0 1px 3px;
+			-moz-box-shadow: rgba(0,0,0,0.3) 0 1px 3px;
+			box-shadow: rgba(0,0,0,0.3) 0px 1px 3px;
+
+			margin-right:40px; }
+			
+
+		#main_showboxS_last { 
+			/*不需要右对齐*/
+			margin-right:0px; 
+		}
+
+
+		.main_showboxS_img {
+			width: 100%;
+			height: 100%;
+		}
+
+		#xdesktop {
+			background: url(../img/xreader_s.png);
+		}
+
+		#xreader {
+			background: url(../img/xreader_s.png);
+		}
+
+		#join {
+			background: url(../img/jobs_s.png);
+
+		}
+
+		#about {
+			background: url(../img/about_s.jpg);
+
+		}
+
+		#xreader,#xdesktop,#join,#about {
+			/*图片自适应大小*/
+			filter:"progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod='scale')";
+			-moz-background-size:100% 100%;
+			background-size:100% 100%;
+			/*图片自适应大小*/
+
+			-moz-border-radius: 5px;
+			-webkit-border-radius: 5px;
+			border-radius: 5px;
+		}
