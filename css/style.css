@@ -93,10 +93,11 @@
 
 		.down {
 			
-			margin: 310px 0px 0px 620px;
+			margin: 315px 0px 0px 605px;
 			width: 200px;
 			height: 80px;
-			
+			font-size: 20px;
+			color: #666;
 		}
 
 

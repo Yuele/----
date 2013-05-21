@@ -20,7 +20,7 @@
 		.main_showboxS_box {
 			width: 980px;
 			height: 220px;
-			margin: 30px auto 0px auto; }
+			margin: 25px auto 0px auto; }
 
 		.main_showboxS {
 			width: 215px;
@@ -38,25 +38,40 @@
 			box-shadow: rgba(0,0,0,0.3) 0px 1px 3px;
 
 			margin-right:40px; }
-			
 
 		#main_showboxS_last { 
 			/*不需要右对齐*/
 			margin-right:0px; 
 		}
 
+		.main_showboxS a:hover{
+			text-decoration: none;
+		}
 
-		.main_showboxS_img {
+		.main_showboxS_content {
 			width: 100%;
 			height: 100%;
 		}
 
+		.main_showboxS_text {
+			font-size: 17px;
+			line-height: 30px;
+			padding: 0 10px 0 10px;
+			color: #333;
+			margin-bottom: 8px;
+		}
+
+		.main_showboxS_content span:hover {
+			text-decoration: underline;
+		}
+
+
 		#xdesktop {
-			background: url(../img/xreader_s.png);
+			//background: url(../img/xreader_s.png);
 		}
 
 		#xreader {
-			background: url(../img/xreader_s.png);
+			//background: url(../img/xreader_s.png);
 		}
 
 		#join {
