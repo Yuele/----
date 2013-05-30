@@ -3,50 +3,48 @@
 <html>
 
 <head>
-    <title>X-desktop 官方网站</title>
+    <title>迅影软件 官方网站</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <link rel="Shortcut Icon" href="favicon.ico">
     <link rel="Bookmark" href="favicon.ico">
 
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" type="text/css" href="css/button.css">
 
 
     <link rel="stylesheet" href="./iPhone/base.css" type="text/css">
 	<link rel="stylesheet" href="./iPhone/iphone.css" type="text/css">
 	<link rel="stylesheet" href="./iPhone/home.css" type="text/css">
 
-
 	<script>
 
-ACUtils.platterFixes = {
-	isIE8: function () {
-		var match = navigator.userAgent.toLowerCase().match(/msie\D*([\.\d]*)/i);
-		return (match && match[1] && (parseInt(match[1]) <= 8));
-	}
-}
+		ACUtils.platterFixes = {
+			isIE8: function () {
+				var match = navigator.userAgent.toLowerCase().match(/msie\D*([\.\d]*)/i);
+				return (match && match[1] && (parseInt(match[1]) <= 8));
+			}
+		}
 
-Media.ControlsWidget.prototype._positionSettingsMenuForControl = Media.ControlsWidget.prototype.positionSettingsMenuForControl;
-Media.ControlsWidget.prototype.positionSettingsMenuForControl = function(control) {
-	var correction = ((document.viewport.getDimensions().width - document.body.offsetWidth));
-	this._positionSettingsMenuForControl(control);
-	this.settingsMenu.style.left = (parseInt(this.settingsMenu.style.left) - correction / 2) + 'px';
-}
+		Media.ControlsWidget.prototype._positionSettingsMenuForControl = Media.ControlsWidget.prototype.positionSettingsMenuForControl;
+		Media.ControlsWidget.prototype.positionSettingsMenuForControl = function(control) {
+			var correction = ((document.viewport.getDimensions().width - document.body.offsetWidth));
+			this._positionSettingsMenuForControl(control);
+			this.settingsMenu.style.left = (parseInt(this.settingsMenu.style.left) - correction / 2) + 'px';
+		}
 
-if (!ACUtils.platterFixes.isIE8()) {
-	ACUtils._cumulativeOffset = ACUtils.cumulativeOffset;
-	ACUtils.cumulativeOffset = function(element) {
-		var offset = ACUtils._cumulativeOffset(element);
-		
-		// if we're in a platter, compensate for the width set on the body
-		offset[0] += ((document.viewport.getDimensions().width - document.body.offsetWidth) / 2);
-		offset.left = offset[0];
-		return offset;
-	}
-}
-
-</script>
-
+		if (!ACUtils.platterFixes.isIE8()) {
+			ACUtils._cumulativeOffset = ACUtils.cumulativeOffset;
+			ACUtils.cumulativeOffset = function(element) {
+				var offset = ACUtils._cumulativeOffset(element);
+				
+				// if we're in a platter, compensate for the width set on the body
+				offset[0] += ((document.viewport.getDimensions().width - document.body.offsetWidth) / 2);
+				offset.left = offset[0];
+				return offset;
+			}
+		}
+	</script>
 
 </head>
 
@@ -78,12 +76,10 @@ if (!ACUtils.platterFixes.isIE8()) {
 			<div id="V5" href="page.html" class="xreader_box" style="background: url(img/V5.png) no-repeat;height: 500px;-moz-border-radius: 5px;
 			-webkit-border-radius: 5px;
 			border-radius: 5px;">
-				<button class="down">下载使用</button>
+				<div class="btnbox"><button class="btn btn-primary btn-large">免费下载</button><p>版本:13.0530 &nbsp;日期:2013-5-30</P></div>
 			</div>
 
 
-			
-			<!--<button class="down">畅快的阅读体验快来体验</button> <!--下载按钮 -->
 
 
 
@@ -92,14 +88,14 @@ if (!ACUtils.platterFixes.isIE8()) {
 		<div class="main_showboxS_box">
 
 			<div class="main_showboxS" ><a href="xdesktop.html"><div class="main_showboxS_content"  id="xdesktop">
-				<p style="padding: 20px 0 0 48px;font-size: 30px;color: #000;font-weight: bolder;">迅影桌面</p>
-				<p class="main_showboxS_text">1.优雅的界面出色的体验<br>2.文档软件 ，U盘带着走<br>3.完美防护，隐私不泄露<br>4.系统崩溃，数据不丢失</p><span style="margin-left:10px;">进入查看</span></div>
+				<p style="padding: 20px 0 0 48px;font-size: 30px;color: #000;font-weight: bolder;">迅影桌面</p><hr>
+				<p class="main_showboxS_text">1.优雅的界面出色的体验<br>2.文档软件 ，U盘带着走<br>3.完美防护，隐私不泄露<br>4.系统崩溃，数据不丢失</p><span style="margin:0 0 0 20px;">进入查看</span></div>
 				
 			</a></div>
 
 			<div class="main_showboxS" ><a href="xreader.html"><div class="main_showboxS_content"  id="xreader">
-				<p style="padding: 20px 0 0 48px;font-size: 30px;color: #000;font-weight: bolder;">迅阅资讯</p>
-				<p class="main_showboxS_text">1. 淋漓尽致的阅读感受<br>2. 了解各行各业新鲜事<br>3. 看风景看游记看妹纸<br>4. 集各行各业干货文章</p><span style="margin-left:10px;">进入查看</span></div>
+				<p style="padding: 20px 0 0 48px;font-size: 30px;color: #000;font-weight: bolder;">迅阅资讯</p><hr>
+				<p class="main_showboxS_text">1. 淋漓尽致的阅读感受<br>2. 了解各行各业新鲜事<br>3. 看风景看游记看妹纸<br>4. 集各行各业干货文章</p><span style="margin-left:20px;">进入查看</span></div>
 			</a></div>
 
 			<div class="main_showboxS" ><a href="jobs.html"><div class="main_showboxS_content" id="join"><p style="padding: 20px 0 0 48px;font-size: 30px;color: #000;font-weight: bolder;">加入我们</p></div></a></div>

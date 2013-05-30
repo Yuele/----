@@ -54,9 +54,9 @@
 		}
 
 		.main_showboxS_text {
-			font-size: 17px;
-			line-height: 30px;
-			padding: 0 10px 0 10px;
+			font-size: 15px;
+			line-height: 28px;
+			padding: 0 20px 0 20px;
 			color: #333;
 			margin-bottom: 8px;
 		}
@@ -67,11 +67,9 @@
 
 
 		#xdesktop {
-			//background: url(../img/xreader_s.png);
 		}
 
 		#xreader {
-			//background: url(../img/xreader_s.png);
 		}
 
 		#join {
