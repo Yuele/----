@@ -10,9 +10,9 @@
 			-webkit-border-radius: 5px;
 			border-radius: 5px;
 			
-			-webkit-box-shadow: rgba(0,0,0,0.3) 0 2px 4px;
-			-moz-box-shadow: rgba(0,0,0,0.3) 0 2px 4px;
-			box-shadow: rgba(0,0,0,0.3) 0px 1px 4px;
+			-webkit-box-shadow: rgba(0,0,0,0.3) 0 2px 15px;
+			-moz-box-shadow: rgba(0,0,0,0.3) 0 2px 15px;
+			box-shadow: rgba(0,0,0,0.3) 0px 1px 15px;
 
 			}
 
@@ -33,9 +33,9 @@
 			-webkit-border-radius: 5px;
 			border-radius: 5px;
 
-			-webkit-box-shadow: rgba(0,0,0,0.3) 0 1px 3px;
-			-moz-box-shadow: rgba(0,0,0,0.3) 0 1px 3px;
-			box-shadow: rgba(0,0,0,0.3) 0px 1px 3px;
+			-webkit-box-shadow: rgba(0,0,0,0.3) 0 1px 7px;
+			-moz-box-shadow: rgba(0,0,0,0.3) 0 1px 7px;
+			box-shadow: rgba(0,0,0,0.3) 0px 1px 7px;
 
 			margin-right:40px; }
 
